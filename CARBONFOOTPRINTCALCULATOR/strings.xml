@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">Carbon Footprint Calculator</string>
+    <!-- Vehicle types -->
+    <string-array name="vehicle_types">
+        <item>Car</item>
+        <item>Bus</item>
+        <item>Train</item>
+        <item>Bike</item>
+    </string-array>
+
+    <!-- Electricity sources -->
+    <string-array name="electricity_sources">
+        <item>Coal</item>
+        <item>Solar</item>
+        <item>Wind</item>
+        <item>Hydro</item>
+    </string-array>
+
+    <!-- Diet options -->
+    <string-array name="diet_options">
+        <item>Meat-heavy</item>
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+    </string-array>
+</resources>
