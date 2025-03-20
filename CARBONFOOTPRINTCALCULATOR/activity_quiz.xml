@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbon Footprint Quiz"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp"/>
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which energy source has the lowest carbon footprint?"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/option1_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Coal"/>
+            <RadioButton android:id="@+id/option1_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Solar"/>
+            <RadioButton android:id="@+id/option1_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Natural Gas"/>
+            <RadioButton android:id="@+id/option1_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nuclear"/>
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which mode of transportation produces the least CO₂ per km?"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/option2_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Car"/>
+            <RadioButton android:id="@+id/option2_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Airplane"/>
+            <RadioButton android:id="@+id/option2_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Train"/>
+            <RadioButton android:id="@+id/option2_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bus"/>
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which diet has the lowest carbon footprint?"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/option3_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Meat-heavy diet"/>
+            <RadioButton android:id="@+id/option3_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vegetarian"/>
+            <RadioButton android:id="@+id/option3_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vegan"/>
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the most energy-efficient way to heat your home?"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/option4_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gas Furnace"/>
+            <RadioButton android:id="@+id/option4_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Electric Heater"/>
+            <RadioButton android:id="@+id/option4_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Heat Pump"/>
+        </RadioGroup>
+
+        <!-- Question 5 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the best way to reduce food-related emissions?"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/option5_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Throw food in the trash"/>
+            <RadioButton android:id="@+id/option5_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Compost food waste"/>
+            <RadioButton android:id="@+id/option5_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Waste less food"/>
+        </RadioGroup>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Feedback Text -->
+        <TextView
+            android:id="@+id/textFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your score will appear here."
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:padding="8dp"/>
+
+        <!-- Button to Retake Quiz -->
+        <Button
+            android:id="@+id/btn_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retake the Quiz"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
