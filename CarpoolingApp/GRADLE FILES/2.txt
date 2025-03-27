@@ -1,0 +1,51 @@
+// ✅ Move buildscript to top-level
+buildscript {
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.3.0")
+        classpath("com.google.gms:google-services:4.3.15") // ✅ Firebase Google Services Plugin
+    }
+}
+
+plugins {
+    id("com.android.application")
+    id("com.google.gms.google-services") // ✅ Firebase
+}
+
+android {
+    namespace = "com.example.carpoolingapp"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.example.carpoolingapp"
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
+    // ✅ Firebase BOM (Bill of Materials)
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore")
+}
+build.gradle.kts(:app)
